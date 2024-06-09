@@ -1,0 +1,195 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* restaurant Name */
+  color: #557c3e;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.75;
+}
+
+.navbar-brand p { /* Kosher Cart*/
+  color: #000;
+  font-size: 0.7em;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p span {
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #61122f;
+  text-align: center;
+}
+
+#nav-list a span {
+   font-size: 1.8em;
+}
+
+#nav-list a:hover {
+  background-color: #E7E7E7;
+}
+
+#phone {
+  margin-top: 5px;
+}
+
+#phone a {  /* Phone Number */
+  text-align: right;
+  padding-bottom: 0px;
+}
+
+#phone div {  /* We deliver*/
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.container .jumbotron { /* For Home page */
+  padding: 0;
+  border: 2px solid #000;
+}
+
+
+
+
+/************************** END HEADER **************************/
+
+/**** For Large devices *****/
+
+@media (min-width:1200px) {
+  /* For Home page */
+
+  .container .jumbotron {   
+    background: url(../images/jumbotron_1200.jpg) no-repeat;
+    height: 675px;
+  }
+
+}
+
+/***** For Medium Devices ****/
+
+@media (min-width:992px) and (max-width:1199px) {
+   #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 5px 5px 5px 0;
+   }
+
+   /* For Home page */
+   .container .jumbotron {  
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+}
+
+/**** For Small Devices ****/
+
+@media (min-width:768px) and (max-width:991px) {
+  
+  /* For Home page */
+  .container .jumbotron { 
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 432px;
+  }
+
+}
+
+/**** For extra small Devices *****/
+
+@media (max-width:767px ) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurent name */
+  font-size: 5vw;  /* 1vw = 1% of viewport width */
+  padding-top: 10px;
+
+  }
+  .navbar-brand p { /* Cart*/
+    padding-top: 10px;
+    font-size: 0.7em;
+  }
+
+  .navbar-brand p img {
+    height: 20px; /* Star K */
+  }
+
+  #collapsable-nav a { /* Collapse nav menu a */
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span { /* glyphycon */
+     font-size: 1em;
+     margin-right: 5px;
+  }
+
+  #call-btn>a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .navbar-header {
+    margin-bottom: 10px;
+  }
+
+
+}
