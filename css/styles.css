@@ -90,15 +90,62 @@ body {
   margin-top: -30px;
 }
 
-.container .jumbotron { /* For Home page */
+/************************** END HEADER **************************/
+
+
+
+/************************* Start of Home page **********************/
+
+.container .jumbotron { 
   padding: 0;
   border: 2px solid #000;
 }
 
 
+#menu-tile, #specials-tile, #map-tile {
+  border: 2px solid #3F0C1F;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}  
+
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#specials-tile {
+  background: url('../images/specials-tile.jpg');
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #000;
+  opacity: 0.8;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+   
+  width: 100%;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
 
 
-/************************** END HEADER **************************/
+/************************* End of Home page **********************/
+
+
+
+/*******************  For Media Queries ***************/
 
 /**** For Large devices *****/
 
@@ -122,8 +169,7 @@ body {
     margin: 5px 5px 5px 0;
    }
 
-   /* For Home page */
-   .container .jumbotron {  
+   .container .jumbotron {  /* For Home page */
     background: url('../images/jumbotron_992.jpg') no-repeat;
     height: 558px;
   }
@@ -133,13 +179,17 @@ body {
 
 @media (min-width:768px) and (max-width:991px) {
   
-  /* For Home page */
-  .container .jumbotron { 
+  
+  .container .jumbotron { /** For Home page **/
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 432px;
   }
 
+  
+  
 }
+
+
 
 /**** For extra small Devices *****/
 
@@ -191,5 +241,20 @@ body {
     margin-bottom: 10px;
   }
 
+  .container .jumbotron { /* For Home page */
+    margin-top: 30px;
+    padding: 0;
+  }
+
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+
+
+   }
 
 }
+
+/************************************  End Of Media Queries ***************************************/
+
