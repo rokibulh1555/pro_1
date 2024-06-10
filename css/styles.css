@@ -144,6 +144,46 @@ body {
 /************************* End of Home page **********************/
 
 
+/*******   Start of the footer *****/
+
+.panel-footer {
+  background-color: #222;
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30x;
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 30px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+
+#hours>span, #address>span {
+  font-size: 1.3em;
+}
+
+#address p {
+  font-size: 0.8em;
+  color: #557c3e;
+  line-height: 1.8;
+}
+
+#testimonials {
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+
+
+/*******   End of the footer *****/
+
+
 
 /*******************  For Media Queries ***************/
 
@@ -254,7 +294,41 @@ body {
 
    }
 
+/* Footer */
+   .panel-footer {
+    text-align: center;
+    margin-bottom: 30px;
+   }
+
+   .panel-footer section:nth-child(3) {
+    margin-bottom: 0;
+   }
+
+   .panel-footer section hr {
+    width: 50%;
+   }
+
+   /* End footer*/
+
 }
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}
+
 
 /************************************  End Of Media Queries ***************************************/
 
