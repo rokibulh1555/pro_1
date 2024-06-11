@@ -183,6 +183,40 @@ body {
 
 /*******   End of the footer *****/
 
+/******** For menu category Page **********/
+
+#menu-categories-title + div {
+  margin-bottom: 40px;
+}
+
+.category-tile {
+  border: 2px solid #3F0C1F;
+  position: relative;
+  width: 200px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  background: #000;
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+/******* End of menu category Page ********/
+
 
 
 /*******************  For Media Queries ***************/
