@@ -1,1 +1,1 @@
-Live link of this projecr: https://simple-restaurent-rok.netlify.app/
+Live link of this project: https://simple-restaurent-rok.netlify.app/
