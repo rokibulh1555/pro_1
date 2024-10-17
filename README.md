@@ -1,1 +1,1 @@
-This is a restaurant website project
+Live link of this projecr: https://simple-restaurent-rok.netlify.app/
